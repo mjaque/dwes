@@ -1,0 +1,17 @@
+<?php
+// Mostrar todos los errores
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+
+// Log de errores
+ini_set('log_errors', 1);
+ini_set('error_log', '/ruta/al/archivo/error.log');
+
+// Nivel de reporte de errores
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+error_reporting(E_ALL & ~E_NOTICE); // Todos excepto notices
+
+// Tiempo máximo de ejecución de errores
+ini_set('max_execution_time', 30);
+?>
